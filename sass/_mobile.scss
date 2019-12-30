@@ -1,0 +1,75 @@
+//Wide screen
+@include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+//Desktop and laptops
+@include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+//Tablets and Small laptops
+@include mediaMd {
+  main {
+    align-items: center;
+    text-align: center;
+  }
+  .menu-nav,
+  .menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+
+    &.show {
+      transform: translate(0, 0);
+    }
+  }
+
+  .menu-nav {
+    height: 70vh;
+    transform: translate(100%, 0);
+    .nav-link {
+      font-size: 24px;
+    }
+  }
+  .menu-branding {
+    height: 30vh;
+    transform: translate(-100%, 0);
+    .portrait {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+//Smartphones
+@include mediaSm {
+  main#home {
+    margin-top: 0vh;
+    &h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
