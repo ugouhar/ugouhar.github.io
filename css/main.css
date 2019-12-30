@@ -136,7 +136,7 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.9);
     text-align: left;
-    width: 50%; }
+    width: 100%; }
   h1.xsm-heading,
   h2.xsm-heading,
   h3.xsm-heading {
@@ -175,7 +175,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: "bioimage bio bio"
+ "job1 job2 job3";
   margin-bottom: 2rem; }
   .about-info .bio-image {
     grid-area: bioimage;
@@ -292,7 +293,11 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-areas: "bioimage"
+ "bio"
+ "job1"
+ "job2"
+ "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
