@@ -10,6 +10,13 @@
   .projects {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .education {
+    grid-template-areas:
+      "clg hsc"
+      "ssc ems";
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 //Tablets and Small laptops
@@ -48,12 +55,24 @@
   .about-info {
     grid-template-areas:
       "bioimage"
-      "bio"
-      "job1"
-      "job2"
-      "job3";
+      "bio";
 
     grid-template-columns: 1fr;
+  }
+
+  .education {
+    grid-template-areas:
+      "clg"
+      "hsc"
+      "ssc"
+      "ems";
+    grid-template-columns: 1fr;
+  }
+
+  @for $x from 1 through 4 {
+    &.w3-animate-bottom:nth-child(#{$x}) {
+      animation: animatebottom $x * 0.5s;
+    }
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -67,6 +86,15 @@
     &h1 {
       font-size: 4rem;
     }
+  }
+
+  .education {
+    grid-template-areas:
+      "clg"
+      "hsc"
+      "ssc"
+      "ems";
+    grid-template-columns: 1fr;
   }
 
   .projects {
