@@ -3,6 +3,16 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  .site {
+    width: 50%;
+  }
+
+  .close {
+    display: block;
+  }
+  #closeBtn {
+    display: none;
+  }
 }
 
 //Desktop and laptops
@@ -17,6 +27,17 @@
       "ssc ems";
     grid-template-columns: 1fr 1fr;
   }
+
+  .site {
+    width: 50%;
+  }
+
+  .close {
+    display: block;
+  }
+  #closeBtn {
+    display: none;
+  }
 }
 
 //Tablets and Small laptops
@@ -25,6 +46,11 @@
     align-items: center;
     text-align: center;
   }
+
+  main#about {
+    padding: 15px;
+  }
+
   .menu-nav,
   .menu-branding {
     float: none;
@@ -60,6 +86,25 @@
     grid-template-columns: 1fr;
   }
 
+  .expertise-container {
+    grid-template-columns: 1fr;
+    .skills {
+      text-align: left;
+      .progress {
+        width: 100%;
+      }
+    }
+    .cpSites {
+      display: grid;
+      grid-gap: 1rem 1rem;
+      grid-template-columns: 1fr 1fr;
+
+      .site {
+        width: 100%;
+      }
+    }
+  }
+
   .education {
     grid-template-areas:
       "clg"
@@ -69,6 +114,9 @@
     grid-template-columns: 1fr;
   }
 
+  #main-footer {
+    bottom: -1%;
+  }
   @for $x from 1 through 4 {
     &.w3-animate-bottom:nth-child(#{$x}) {
       animation: animatebottom $x * 0.5s;
@@ -76,6 +124,17 @@
   }
   .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-box {
+    width: 60%;
+    height: 90%;
+  }
+  .close {
+    display: block;
+  }
+  #closeBtn {
+    display: none;
   }
 }
 
@@ -87,7 +146,13 @@
       font-size: 4rem;
     }
   }
+  main#about {
+    padding: 15px;
+  }
 
+  .text-details {
+    text-align: left;
+  }
   .education {
     grid-template-areas:
       "clg"
@@ -97,7 +162,29 @@
     grid-template-columns: 1fr;
   }
 
+  #main-footer {
+    bottom: -1%;
+  }
+
+  .site {
+    width: 100%;
+  }
   .projects {
     grid-template-columns: 1fr;
+  }
+
+  .modal-box {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    .close {
+      display: none;
+    }
+    #closeBtn {
+      display: block;
+    }
   }
 }
