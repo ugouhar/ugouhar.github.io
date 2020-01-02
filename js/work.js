@@ -13,7 +13,7 @@ var description = [
     title: "Tile Game",
 
     description:
-      "Tiles of different colors and shape come from the top\
+      "Tiles of different colors and shape come from the top.\
       Player has to clear tiles by placing atleast 3 tiles\
       continuously either horizontally, vertically and/or \
       diagonally of same colour.",
