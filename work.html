@@ -1,130 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/50331681e2.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
 
-    <title>My Work</title>
-  </head>
-  <body>
-    <header>
-      <div class="menu-btn">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/50331681e2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>My Work</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
       </div>
-      <nav class="menu">
-        <div class="menu-branding">
-          <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">HOME</a>
-          </li>
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">ABOUT</a>
-          </li>
-          <li class="nav-item current">
-            <a href="work.html" class="nav-link">MY WORK</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="nav-link">HOW TO REACH ME</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item current">
+          <a href="work.html" class="nav-link">MY WORK</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">HOW TO REACH ME</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <main id="work">
-      <h1 class="lg-heading">
-        My
-        <span class="text-secondary">Projects</span>
-      </h1>
-      <h2 class="sm-heading">
-        Check out some of my projects...
-      </h2>
+  <main id="work">
 
-      <div class="projects">
-        <div class="items">
+    <div class="modal">
+
+      <div class="modal-box">
+        <span class="close" id="closeIcon">&times;</span>
+        <button id="closeBtn">Close</button>
+        <div id="project-title"></div>
+        <div id="project-desp"></div>
+        <div id="project-tools"></div>
+      </div>
+
+    </div>
+
+
+    <h1 class="lg-heading">
+      My
+      <span class="text-secondary">Projects</span>
+    </h1>
+    <h2 class="sm-heading">
+      Check out some of my projects...
+    </h2>
+
+    <div class="projects">
+      <div class="items">
+        <div class="image">
           <a href="https://gouhar1512.github.io/Tile-Game/" target="_blank">
             <img src="img/projects/project1.jpg" alt="Project" />
           </a>
           <span class="btn-light"> Tile Game </span>
-          <a
-            href="https://github.com/gouhar1512/Tile-Game"
-            class="btn-dark"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i>Github
-          </a>
         </div>
+        <a href="https://github.com/gouhar1512/Tile-Game" class="btn-dark" target="_blank">
+          <i class="fab fa-github"></i>Github
+        </a>
+      </div>
 
-        <div class="items">
+      <div class="items">
+        <div class="image">
           <a href="#!">
             <img src="img/projects/project2.jpg" alt="Project" />
           </a>
           <span class="btn-light">Buy N Sell </span>
-          <a
-            href="https://github.com/gouhar1512/BuyNSell"
-            class="btn-dark"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i>Github
-          </a>
         </div>
+        <a href="https://github.com/gouhar1512/BuyNSell" class="btn-dark" target="_blank">
+          <i class="fab fa-github"></i>Github
+        </a>
+      </div>
 
-        <div class="items">
+      <div class="items">
+        <div class="image">
           <a href="#!">
             <img src="img/projects/project3.jpg" alt="Project" />
           </a>
           <span class="btn-light"> Contact List</span>
-          <a
-            href="https://github.com/gouhar1512/Contact-List"
-            class="btn-dark"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i>Github
-          </a>
         </div>
+        <a href="https://github.com/gouhar1512/Contact-List" class="btn-dark" target="_blank">
+          <i class="fab fa-github"></i>Github
+        </a>
+      </div>
 
-        <div class="items">
+      <div class="items">
+        <div class="image">
           <a href="#!">
             <img src="img/projects/project4.jpg" alt="Project" />
           </a>
           <span class="btn-light"> BookList App </span>
-          <a
-            href="https://github.com/gouhar1512/Book-List-App"
-            class="btn-dark"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i>Github
-          </a>
         </div>
+        <a href="https://github.com/gouhar1512/Book-List-App" class="btn-dark" target="_blank">
+          <i class="fab fa-github"></i>Github
+        </a>
+      </div>
 
-        <div class="items">
+      <div class="items">
+        <div class="image">
           <a href="#!">
             <img src="img/projects/project5.jpg" alt="Project" />
           </a>
           <span class="btn-light"> To-Do App </span>
-          <a
-            href="https://github.com/gouhar1512/To-do-app"
-            class="btn-dark"
-            target="_blank"
-          >
-            <i class="fab fa-github"></i>Github
-          </a>
         </div>
+        <a href="https://github.com/gouhar1512/To-do-app" class="btn-dark" target="_blank">
+          <i class="fab fa-github"></i>Github
+        </a>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <footer id="main-footer">
-      Copyright &copy; 2019
-    </footer>
-    <script src="js/main.js"></script>
-  </body>
+  <footer id="main-footer">
+    Copyright &copy; 2020
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/work.js"></script>
+</body>
+
 </html>
