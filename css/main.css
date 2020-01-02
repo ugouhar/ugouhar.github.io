@@ -171,6 +171,20 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 10vh; }
+  main .resume {
+    background-color: #3c3c3c;
+    width: 170px;
+    padding: 10px 15px;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: 2px solid orange;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px; }
+    main .resume:hover {
+      background-color: orange;
+      color: black; }
 
 .about-info {
   display: grid;
@@ -212,44 +226,68 @@ main {
       font-size: 1rem;
       padding: 1rem;
       padding-right: 1.5rem;
+      padding-left: 1%;
       word-wrap: break-word;
       font-style: italic; }
 
-.edu-heading,
-.skills {
-  margin-bottom: 2rem;
-  margin-top: 5rem; }
-  .edu-heading h2,
-  .skills h2 {
-    font-size: 2.5rem;
-    border-bottom: 4px solid #eece1a;
-    width: fit-content;
-    padding-right: 2rem;
-    margin-bottom: 2rem; }
-  .edu-heading .all-lang,
-  .skills .all-lang {
-    margin-bottom: 1rem; }
-  .edu-heading .lang-name,
-  .skills .lang-name {
-    font-size: 20px; }
-  .edu-heading .progress,
-  .skills .progress {
-    border: 1px solid #c4c4c4;
-    width: 50%;
-    position: relative;
-    border-radius: 10px; }
-    .edu-heading .progress .skill-percent,
-    .skills .progress .skill-percent {
-      width: 0px;
-      height: 20px;
-      background-image: linear-gradient(to right, orange, #eece1a);
+.edu-heading h2 {
+  font-size: 2.5rem;
+  border-bottom: 4px solid #eece1a;
+  width: fit-content;
+  padding-right: 2rem;
+  margin-bottom: 2rem; }
+
+.expertise-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .expertise-container .skills,
+  .expertise-container .cp-profile {
+    margin-bottom: 2rem;
+    margin-top: 5rem; }
+    .expertise-container .skills h2,
+    .expertise-container .cp-profile h2 {
+      font-size: 2.5rem;
+      border-bottom: 4px solid #eece1a;
+      width: fit-content;
+      padding-right: 2rem;
+      margin-bottom: 2rem; }
+    .expertise-container .skills .all-lang,
+    .expertise-container .cp-profile .all-lang {
+      margin-bottom: 1rem; }
+    .expertise-container .skills .lang-name,
+    .expertise-container .cp-profile .lang-name {
+      font-size: 20px; }
+    .expertise-container .skills .progress,
+    .expertise-container .cp-profile .progress {
+      border: 1px solid #c4c4c4;
+      width: 80%;
+      position: relative;
       border-radius: 10px; }
-    .edu-heading .progress .skill-num,
-    .skills .progress .skill-num {
-      position: absolute;
-      right: 0px;
-      top: 0px;
-      padding-right: 5px; }
+      .expertise-container .skills .progress .skill-percent,
+      .expertise-container .cp-profile .progress .skill-percent {
+        width: 0px;
+        height: 20px;
+        background-image: linear-gradient(to right, orange, #eece1a);
+        border-radius: 10px; }
+      .expertise-container .skills .progress .skill-num,
+      .expertise-container .cp-profile .progress .skill-num {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding-right: 5px; }
+  .expertise-container .cp-profile .cpSites {
+    display: grid; }
+    .expertise-container .cp-profile .cpSites .site {
+      font-size: 20px;
+      margin-bottom: 1rem;
+      text-align: center;
+      border: 2px solid #c4c4c4;
+      padding: 0.5rem;
+      cursor: pointer; }
+      .expertise-container .cp-profile .cpSites .site:hover {
+        border: 2px solid #eece1a;
+        color: #eece1a;
+        transition: all 0.5s; }
 
 .education {
   display: grid;
@@ -288,6 +326,79 @@ main {
     grid-area: ssc; }
   .education .exam-scores {
     grid-area: ems; }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-box {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 2rem;
+  margin-left: 25%;
+  width: 50%;
+  height: 70%;
+  overflow: auto;
+  background-color: black;
+  border: 10px solid #eece1a;
+  box-shadow: 0px 0px 4px 4px;
+  border-radius: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif; }
+  .modal-box .close {
+    color: #aaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 20px;
+    cursor: pointer; }
+  .modal-box #closeBtn {
+    width: 80%;
+    left: 10%;
+    position: absolute;
+    bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #660000;
+    color: white;
+    font-weight: bold;
+    border: 0px; }
+  .modal-box #project-title {
+    margin-top: 10%;
+    width: 100%;
+    height: 15%;
+    padding: 15px;
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold; }
+  .modal-box #project-desp {
+    border-top: 1px solid white;
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px; }
+  .modal-box #project-tools {
+    border-top: 1px solid white;
+    width: 100%;
+    height: 15%;
+    padding: 10px;
+    padding-top: 20px;
+    font-style: italic;
+    margin-top: 20px; }
 
 .projects {
   display: grid;
@@ -357,21 +468,35 @@ main {
   bottom: 0px;
   width: 100%; }
 
-@media screen and (min-width: 1171) {
+@media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .site {
+    width: 50%; }
+  .close {
+    display: block; }
+  #closeBtn {
+    display: none; } }
 
 @media screen and (min-width: 781px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .education {
     grid-template-areas: "clg hsc" "ssc ems";
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+  .site {
+    width: 50%; }
+  .close {
+    display: block; }
+  #closeBtn {
+    display: none; } }
 
 @media screen and (max-width: 780px) {
   main {
     align-items: center;
     text-align: center; }
+  main#about {
+    padding: 15px; }
   .menu-nav,
   .menu-branding {
     float: none;
@@ -394,9 +519,23 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio";
     grid-template-columns: 1fr; }
+  .expertise-container {
+    grid-template-columns: 1fr; }
+    .expertise-container .skills {
+      text-align: left; }
+      .expertise-container .skills .progress {
+        width: 100%; }
+    .expertise-container .cpSites {
+      display: grid;
+      grid-gap: 1rem 1rem;
+      grid-template-columns: 1fr 1fr; }
+      .expertise-container .cpSites .site {
+        width: 100%; }
   .education {
     grid-template-areas: "clg" "hsc" "ssc" "ems";
     grid-template-columns: 1fr; }
+  #main-footer {
+    bottom: -1%; }
   .w3-animate-bottom:nth-child(1) {
     animation: animatebottom 0.5s; }
   .w3-animate-bottom:nth-child(2) {
@@ -406,15 +545,41 @@ main {
   .w3-animate-bottom:nth-child(4) {
     animation: animatebottom 2s; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .modal-box {
+    width: 60%;
+    height: 90%; }
+  .close {
+    display: block; }
+  #closeBtn {
+    display: none; } }
 
 @media screen and (max-width: 500px) {
   main#home {
     margin-top: 0vh; }
     main#homeh1 {
       font-size: 4rem; }
+  main#about {
+    padding: 15px; }
+  .text-details {
+    text-align: left; }
   .education {
     grid-template-areas: "clg" "hsc" "ssc" "ems";
     grid-template-columns: 1fr; }
+  #main-footer {
+    bottom: -1%; }
+  .site {
+    width: 100%; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .modal-box {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0; }
+    .modal-box .close {
+      display: none; }
+    .modal-box #closeBtn {
+      display: block; } }
