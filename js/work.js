@@ -13,10 +13,10 @@ var description = [
     title: "Tile Game",
 
     description:
-      "A Tile Game in which player \
-      have to clear tiles by placing atleast\
-      3 tiles continously either horizontally,\
-      vertically and/ or diagonally.",
+      "Tiles of different colors and shape come from the top\
+      Player has to clear tiles by placing atleast 3 tiles\
+      continuously either horizontally, vertically and/or \
+      diagonally of same colour.",
 
     tools: "HTML, CSS and Javascript"
   },
