@@ -44,11 +44,6 @@ function transitionOnScroll() {
       skillPercent[i].style.width = `${percent[i]}%`;
       skillPercent[i].style.transition = "1.2s";
     }
-    for (let i = 0; i < skillNum.length; i++) {
-      setTimeout(() => {
-        skillNum[i].innerText = `${percent[i]}%`;
-      }, 1000);
-    }
   }
 
   var edu = document.getElementsByClassName("edu");
