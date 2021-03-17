@@ -48,7 +48,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait2.jpg");
       background-size: cover;
       border-radius: 50%;
       border: 3px solid #eece1a; }
@@ -199,7 +199,8 @@ main {
     border: 3px solid #eece1a; }
   .about-info .bio {
     display: grid;
-    grid-template-areas: "tabular" "text";
+    grid-template-areas: "tabular"
+ "text";
     grid-area: bio;
     font-size: 1.3rem;
     background: #373737;
@@ -482,7 +483,8 @@ main {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .education {
-    grid-template-areas: "clg hsc" "ssc ems";
+    grid-template-areas: "clg hsc"
+ "ssc ems";
     grid-template-columns: 1fr 1fr; }
   .site {
     width: 50%; }
@@ -517,7 +519,8 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: "bioimage" "bio";
+    grid-template-areas: "bioimage"
+ "bio";
     grid-template-columns: 1fr; }
   .expertise-container {
     grid-template-columns: 1fr; }
@@ -532,7 +535,10 @@ main {
       .expertise-container .cpSites .site {
         width: 100%; }
   .education {
-    grid-template-areas: "clg" "hsc" "ssc" "ems";
+    grid-template-areas: "clg"
+ "hsc"
+ "ssc"
+ "ems";
     grid-template-columns: 1fr; }
   #main-footer {
     bottom: -1%; }
@@ -564,7 +570,10 @@ main {
   .text-details {
     text-align: left; }
   .education {
-    grid-template-areas: "clg" "hsc" "ssc" "ems";
+    grid-template-areas: "clg"
+ "hsc"
+ "ssc"
+ "ems";
     grid-template-columns: 1fr; }
   #main-footer {
     bottom: -1%; }
