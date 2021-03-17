@@ -197,6 +197,9 @@ main {
     margin: auto;
     border-radius: 50%;
     border: 3px solid #eece1a; }
+    .bio-image{
+      width: 350px;
+    }
   .about-info .bio {
     display: grid;
     grid-template-areas: "tabular"
