@@ -39,10 +39,8 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-  .typeString("Student, ")
+  .typeString("Software Engineer, ")
   .pauseFor(1000)
-  .typeString("Programmer, ")
+  .typeString("FrontEnd Developer, ")
   .pauseFor(1000)
-  .typeString("Web Developer")
-  .pauseFor(2000)
   .start();
